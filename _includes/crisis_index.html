@@ -1,0 +1,16 @@
+<h1>Crisis!</h1>
+
+<div id="primary_crisis_map">
+    <script src="https://gist.github.com/alecperkins/84c3e482b96902b474d2.js"></script>
+</div>
+
+<div id="news">
+
+    {% assign post = site.categories.news|first %}
+    <div class="post_item">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <div>{{ post.date|date:"%Y-%m-%d" }}</div>
+        <p>{{ post.blurb }}</p>
+    </div>
+
+</div>

@@ -1,0 +1,17 @@
+---
+layout: base
+title: Test Post
+category: news
+blurb: Quick summary of the post
+---
+
+{% include crisis_index.html %}
+
+{% comment %}
+    Switch the above include between crisis_index.html and
+    standard_index.html.
+
+    `crisis_index.html` is map-oriented, and includes the blurb of the latest
+    news item. `standard_index.html` has a smaller map, and has the full
+    versions of the most recent posts from all categories.
+{% endcomment %}

@@ -1,0 +1,13 @@
+
+<h1>All is well</h1>
+<div id="news">
+{% for post in site.categories.news %}
+    <div class="post_item">
+        <h1 href="{{ post.url }}">{{ post.title }}</h1>
+        <p>{{ post.blurb }}</p>
+        <div>
+            {{ post.content }}
+        </div>
+    </div>
+{% endfor %}
+</div>
